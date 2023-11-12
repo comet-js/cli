@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "bin/comet.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,10 @@
   },
   "engines": {
     "node": "^12.0.0 || >= 14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.1.1"
   }
 }
