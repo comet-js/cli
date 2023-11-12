@@ -22,3 +22,7 @@ Comet CLI is really easy to install with just a simple command.
 ```shell
 npm install -g @comet-js/cli
 ```
+
+### License
+
+[MIT](https://github.com/comet-js/cli/blob/main/LICENSE)
