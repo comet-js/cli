@@ -5,6 +5,7 @@ import { build } from "./build.js";
 
 export async function create(name, options) {
     const directory = path.resolve(process.cwd(), name);
+    const template = options.template ?? "default";
 
     if (fs.existsSync(directory) && !options.merge && name !== ".") {
         if (options.force) {
@@ -20,5 +21,5 @@ export async function create(name, options) {
         }
     }
 
-    build(name, directory);
+    build(name, directory, template);
 }

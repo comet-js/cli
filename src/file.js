@@ -7,3 +7,7 @@ export function createFile(directory, name, content) {
     fse.ensureDirSync(path.dirname(filePath));
     fs.writeFileSync(filePath, content);
 }
+
+export function copyTemplate(directory, template) {
+    fs.cpSync(`templates/${template}`, directory, {recursive: true});
+}

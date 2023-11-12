@@ -1,8 +1,10 @@
 import chalk from "chalk";
-import { createFile } from "./file.js";
+import { copyTemplate, createFile } from "./file.js";
 
-export function build(name, directory) {
-    console.log(`✨  Creating project in ${chalk.yellow(directory)}.`);
+export function build(name, directory, template) {
+    console.log(`📦  Creating your Comet application in ${chalk.yellow(directory)}.`);
+
+    copyTemplate(directory, template);
 
     const packageFile = {
         name,
