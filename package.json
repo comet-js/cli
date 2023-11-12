@@ -1,0 +1,24 @@
+{
+  "name": "@comet/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/comet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comet-js/cli.git"
+  },
+  "author": "Mathis HOUIS",
+  "bugs": {
+    "url": "https://github.com/comet-js/cli/issues"
+  },
+  "homepage": "https://github.com/comet-js/cli#readme",
+  "bin": {
+    "comet": "bin/comet.js"
+  },
+  "engines": {
+    "node": "^12.0.0 || >= 14.0.0"
+  }
+}
